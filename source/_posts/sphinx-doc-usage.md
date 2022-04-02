@@ -63,4 +63,4 @@ build
     └── searchindex.js
 ```  
 ### 访问  
-![demo](/images/sphinx-doc-demo.png)
+![demo](https://qqlcc.github.io/recovery/images/sphinx-doc-demo.png)
