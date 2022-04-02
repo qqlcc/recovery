@@ -19,8 +19,8 @@ pip3 install -U Sphinx
 提供了一个命令进行项目创建`sphinx-quickstart`，参考[quickstart](https://www.sphinx-doc.org/en/master/usage/quickstart.html)  
 
 ```bash  
-$ sphinx-quickstart demo
-$ tree demo
+sphinx-quickstart demo
+tree demo
 # 目录结构如下
 demo
 |-- Makefile
