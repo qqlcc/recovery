@@ -63,4 +63,4 @@ build
     └── searchindex.js
 ```  
 ### 访问  
-![demo](../images/sphinx-doc-demo.png)
+![demo](/images/sphinx-doc-demo.png)
