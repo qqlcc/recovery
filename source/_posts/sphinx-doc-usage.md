@@ -31,7 +31,7 @@ demo
     |-- _templates
     |-- conf.py
     `-- index.rst
-```  
+```
 
 ### 主题设置  
 官方自带一些主题，可以到[官方文档](https://www.sphinx-doc.org/en/master/usage/theming.html)查阅。  
@@ -43,6 +43,7 @@ vi demo/source/conf.py
 html_theme = 'sphinx_rtd_theme'
 html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 ```
+
 ### 构建  
 ```bash
 cd demo
@@ -61,6 +62,7 @@ build
     ├── objects.inv
     ├── search.html
     └── searchindex.js
-```  
+```
+
 ### 访问  
 ![demo](https://qqlcc.github.io/recovery/images/sphinx-doc-demo.png)
