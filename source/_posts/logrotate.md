@@ -1,5 +1,5 @@
 ---
-title: logrotate
+title: logrotate 使用
 date: 2022-04-15 17:37:41
 categories:
 tags:
@@ -29,7 +29,7 @@ if [ $EXITVALUE != 0 ]; then
     /usr/bin/logger -t logrotate "ALERT exited abnormally with [$EXITVALUE]"
 fi
 exit $EXITVALUE
-```  
+```
 
 ### logratate  
 
@@ -46,7 +46,8 @@ exit $EXITVALUE
 drwxr-xr-x   2 root root     23 Apr 15 13:36 cron.daily
 -rw-r--r--   1 root root    662 Jul 31  2013 logrotate.conf
 drwxr-xr-x.  1 root root      6 Apr  1  2020 logrotate.d
-```  
+```
+
 安装完logrotate，可以看到创建了一个cron.daily的目录，和logrotate相关的配置及目录，这里还需要安装crond  
 ```bash
 [root@0c4a0d0885e8 ~]# yum install cronie -y
@@ -60,6 +61,7 @@ drwxr-xr-x   2 root root      6 Jun  9  2014 cron.monthly
 drwxr-xr-x   2 root root      6 Jun  9  2014 cron.weekly
 -rw-r--r--   1 root root    451 Jun  9  2014 crontab
 ```
+
 ### 配置  
 
 配置如下所示，最多3个文件，大小超过100K进行切割，保留3天前的日志  
