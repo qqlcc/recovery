@@ -65,4 +65,4 @@ build
 ```
 
 ### 访问  
-![demo](https://qqlcc.github.io/recovery/images/sphinx-doc-demo.png)
+![demo](https://limpair.nos-eastchina1.126.net/images/sphinx-doc-demo.png)
