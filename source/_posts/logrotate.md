@@ -2,7 +2,9 @@
 title: logrotate 使用
 date: 2022-04-15 17:37:41
 categories:
+- Linux
 tags:
+- logrotate
 ---
 
 ## 前言  
