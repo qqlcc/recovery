@@ -103,5 +103,5 @@ theme: next
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: git@qqlnb.github.com:qqlcc/recovery.git
-  branch: gh-pages
+  repo: git@qqlnb.github.com:qqlcc/qqlcc.github.io.git
+  branch: main
