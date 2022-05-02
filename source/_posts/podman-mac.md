@@ -276,7 +276,12 @@ curl 192.168.64.2:8080
 curl 192.168.64.4:8080
 ```
 
-
+podman的命令大部分与docker类似，可以配置一个`alias`
+```bash
+echo 'alias docker="podman"' >> .zshrc
+source .zshrc
+docker version
+```
 
 ## 参考链接
 
