@@ -1,6 +1,7 @@
 ---
 title: Maven 使用记录
 date: 2022-03-26 12:00:00
+sitemap: true
 categories: 
 - 构建工具
 tags:

@@ -1,5 +1,7 @@
 ---
 title: Podman on MacOS
+date: 2022-05-02 12:00:00
+sitemap: true
 categories:
 - Linux
 - Containers

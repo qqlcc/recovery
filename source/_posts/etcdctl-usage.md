@@ -1,6 +1,7 @@
 ---
 title: etcdctl 使用记录
 date: 2022-03-28 12:40:51
+sitemap: true
 categories:
 - Linux
 - etcd

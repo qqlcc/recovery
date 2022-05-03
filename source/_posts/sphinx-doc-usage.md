@@ -1,6 +1,7 @@
 ---
 title: sphinx-doc 配置
 date: 2022-04-02 10:48:48
+sitemap: true
 categories:
 - 文档工具
 tags:
