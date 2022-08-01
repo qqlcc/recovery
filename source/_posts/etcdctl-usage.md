@@ -39,3 +39,30 @@ export ETCDCTL_KEY_FILE=/etc/ssl/private/etcd/peer.key
 etcdctl endpoint status --write-out=table
 etcdctl endpoint health
 ```
+
+## 备份恢复  
+在v2、v3数据混用的情况下，v2数据导出kv，v3使用etcd命令进行备份  
+```bash
+## v2数据导出
+for k in $(etcdctl $param ls --recursive -p | grep -v "/$")
+do
+  v=$(etcdctl $param get $k)
+  if [ $? -eq 0 ]; then
+    value=${v//\'/\'\\\'\'}
+    num=$((num+1))
+    echo "ETCDCTL_API=2 etcdctl $param set $k '$value'" >> /backup_v2_.sh
+  else
+    rm -rf /backup_v2_.sh
+    exit 1
+  fi
+done
+## v3数据备份
+etcdctl $param snapshot save /backup_v3.db 
+etcdctl $param --write-out=table snapshot status /backup_v3_.db
+```  
+
+恢复数据时，先使用快照恢复v3数据，然后再将v2数据导入
+```bash
+etcdctl $param snapshot restore /backup_v3.db
+```
+
